@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  color-scheme: dark-light;
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+i,
+i:active {
+  color: black;
+}
+
+img {
+  width: 4em;
+  height: 4em;
+}
+
+/* img {
+  width: 4em;
+  height: auto;
+  filter: invert(28%) sepia(74%) saturate(6323%) hue-rotate(337deg)
+    brightness(85%) contrast(104%);
+} */

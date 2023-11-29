@@ -1,0 +1,33 @@
+@import "import.css";
+@import "reset.css";
+@import "slider.css";
+@import "test.css";
+
+/* Root */
+/* :root {
+  --color-one: #d2cfd6;
+  --color-two: #ff6969;
+  --color-three: #de273e;
+  --color-four: #130417;
+  --color-five: #ffffff;
+} */
+
+:root {
+  --color-1: rgb(255, 234, 221);
+  --color-2: rgb(252, 174, 174);
+  --color-3: rgb(255, 137, 137);
+  --color-4: rgb(255, 102, 102);
+  --color-5: rgb(245, 50, 50);
+}
+
+/* Body */
+body > * {
+  padding: 10px 75px 10px 75px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
