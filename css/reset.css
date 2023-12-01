@@ -29,17 +29,12 @@ video {
 
 i,
 i:active {
-  color: black;
+  color: crimson;
 }
 
-img {
-  width: 4em;
-  height: 4em;
-}
-
-/* img {
-  width: 4em;
+img.icon {
+  width: 7em;
   height: auto;
   filter: invert(28%) sepia(74%) saturate(6323%) hue-rotate(337deg)
     brightness(85%) contrast(104%);
-} */
+}

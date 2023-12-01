@@ -1,25 +1,29 @@
 swiper-container {
-  width: 100%;
+  width: 1000px;
   height: 100%;
-  padding: 50px;
+  margin: 0 auto;
 }
 
 swiper-container::part(bullet-active),
 swiper-container::part(bullet) {
+  background-color: var(--color-five);
 }
 
 swiper-container::part(button-prev),
 swiper-container::part(button-next) {
-  color: var(--color-one);
+  color: var(--color-three);
 }
 
 swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: inherit;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  padding-bottom: 75px;
 }
 
 swiper-slide img {
