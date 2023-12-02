@@ -12,10 +12,6 @@
   --color-five: #ffffff;
 }
 
-* {
-  outline: 1px solid green;
-}
-
 /* Body */
 body > * {
   padding: 0px 250px 0px 250px;
@@ -330,10 +326,6 @@ section.content.four {
 }
 
 section.content.four .main-container {
-  position: relative;
-}
-
-section.content.four .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 5px solid var(--color-three);
@@ -342,6 +334,10 @@ section.content.four .main-container {
 
   width: 1100px;
   margin: 0 auto;
+}
+
+section.content.four .main-container {
+  position: relative;
 }
 
 section.content.four .left-container {
@@ -381,6 +377,11 @@ section.content.four .right-container button:hover {
 
 /* Footer */
 footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 15px;
+
   font-size: 0.9rem;
   background-color: var(--color-three);
 
@@ -396,16 +397,25 @@ footer i {
 
 /* Line */
 .line {
-  width: 75%;
+  width: 100%;
   height: 3px;
   padding: 0px;
   background-color: var(--color-three);
-  position: absolute;
 
-  left: 0;
-  right: 0;
-  bottom: 50px;
+  position: relative;
   margin: 0 auto;
+}
+
+.content.one .line {
+  bottom: -100px;
+}
+
+.content.two .line {
+  margin-top: 100px;
+}
+
+.content.three .line {
+  bottom: -100px;
 }
 
 /* Background Abstract */
