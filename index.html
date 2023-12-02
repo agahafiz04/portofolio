@@ -24,15 +24,13 @@
     </header>
     <section class="content one">
       <div class="left-container">
-        <h1>
-          Hello folks, nice to meet you! <br />
-          I'm <span>Hafiz Aga</span>.
-        </h1>
+        <h1>Hello folks, <span class="span-one">nice to meet you!</span></h1>
+        <h1>I'm <span class="span-two">Hafiz Aga</span> .</h1>
         <p>
           Graduates from the Diponegoro University S1 Computer Engineering. Have
           a great interest in the IT field, especially in website and game
-          development. Has a great curiosity, and always wants to learn new
-          things.
+          development. Has a great curiosity, and always wants to learn a new
+          things in tech field every single day.
         </p>
         <a href="">Contact Me</a>
       </div>
@@ -109,270 +107,267 @@
     </section>
     <section class="content three">
       <h1 class="content-title">Projects</h1>
-      <div class="top-container">
-        <h1 class="container-title">Personal Project</h1>
-        <div class="card">
-          <div class="img-container">
-            <img src="./assets/projects/virtual.png" />
-            <div class="content">
-              <h1>Virtual Reality Simulation</h1>
-              <p>Airplane Procedure</p>
-              <div class="link">
-                <a
-                  target="_blank"
-                  href="https://github.com/agahafiz04/VR-Simulation-Airport"
-                  >Github <i class="fa-brands fa-github fa-1x"></i
-                ></a>
-                <a target="_blank" href="https://youtu.be/oLm0qSSHeiM"
-                  >Youtube <i class="fa-brands fa-youtube fa-1x"></i
-                ></a>
+      <swiper-container
+        class="mySwiper"
+        slides-per-view="2"
+        pagination="true"
+        pagination-dynamic-bullets="true"
+        centered-slides="true"
+        autoplay-delay="10000"
+        speed="2500"
+        space-between="50"
+      >
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/virtual.png" />
+              <div class="content">
+                <h1>Virtual Reality Simulation</h1>
+                <p>Airplane Procedure</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/VR-Simulation-Airport"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a target="_blank" href="https://youtu.be/oLm0qSSHeiM"
+                    >Youtube <i class="fa-brands fa-youtube fa-1x"></i
+                  ></a>
+                </div>
               </div>
+            </div>
+            <div class="tech">
+              <img class="icon" src="./assets/icon/c-sharp.svg" alt="" />
+              <i class="fa-brands fa-unity fa-3x"></i>
+              <i class="fa-solid fa-vr-cardboard fa-3x"></i>
             </div>
           </div>
-          <div class="tech">
-            <img class="icon" src="./assets/icon/c-sharp.svg" alt="" />
-            <i class="fa-brands fa-unity fa-3x"></i>
-            <i class="fa-solid fa-vr-cardboard fa-3x"></i>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/sidaf.jpg" />
+              <div class="content">
+                <h1>System Information</h1>
+                <p>City Health Department</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/Sistem-Informasi-SIDAF"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="tech">
+              <img class="icon" src="./assets/icon/codeigniter.svg" alt="" />
+              <i class="fa-brands fa-bootstrap fa-3x"></i>
+              <i class="fa-brands fa-php fa-3x"></i>
+              <i class="fa-solid fa-database fa-3x"></i>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="img-container">
-            <img src="./assets/projects/sidaf.jpg" />
-            <div class="content">
-              <h1>System Information</h1>
-              <p>City Health Department</p>
-              <div class="link">
-                <a
-                  target="_blank"
-                  href="https://github.com/agahafiz04/Sistem-Informasi-SIDAF"
-                  >Github <i class="fa-brands fa-github fa-1x"></i
-                ></a>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/restaurant.png" />
+              <div class="content">
+                <h1>Company Profile</h1>
+                <p>Restaurant Landing Page</p>
+                <p></p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/restaurant-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/restaurant-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
+                </div>
               </div>
+            </div>
+            <div class="tech">
+              <img class="icon" src="./assets/icon/webpack.svg" alt="" />
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
             </div>
           </div>
-          <div class="tech">
-            <img src="./assets/icon/codeigniter.svg" alt="" />
-            <i class="fa-brands fa-bootstrap fa-3x"></i>
-            <i class="fa-brands fa-php fa-3x"></i>
-            <i class="fa-solid fa-database fa-3x"></i>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/etch.png" />
+              <div class="content">
+                <h1>Etch A Sketch</h1>
+                <p>Mini Drawing Page</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/etch-a-sketch-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/etch-a-sketch-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="tech">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="bottom-container">
-        <h1 class="container-title">Web Development Project</h1>
-        <swiper-container
-          class="mySwiper"
-          slides-per-view="auto"
-          pagination="true"
-          pagination-dynamic-bullets="true"
-          navigation="true"
-          centered-slides="true"
-          loop="true"
-          autoplay-delay="5000"
-          speed="2500"
-        >
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/restaurant.png" />
-                <div class="content">
-                  <h1>Company Profile</h1>
-                  <p>Restaurant Landing Page</p>
-                  <p></p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/restaurant-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/restaurant-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/calculator.png" />
+              <div class="content">
+                <h1>Basic Calculator</h1>
+                <p>Web App</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/basic-calculator-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/basic-calculator-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
                 </div>
               </div>
-              <div class="tech">
-                <img class="icon" src="./assets/icon/webpack.svg" alt="" />
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/etch.png" />
-                <div class="content">
-                  <h1>Etch A Sketch</h1>
-                  <p>Mini Drawing Page</p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/etch-a-sketch-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/etch-a-sketch-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
+            <div class="tech">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/library.png" />
+              <div class="content">
+                <h1>Library</h1>
+                <p>Mini Database Web App</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/library-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/library-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
                 </div>
               </div>
-              <div class="tech">
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/calculator.png" />
-                <div class="content">
-                  <h1>Basic Calculator</h1>
-                  <p>Web App</p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/basic-calculator-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/basic-calculator-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
+            <div class="tech">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/rps.png" />
+              <div class="content">
+                <h1>Rock Paper Scissors</h1>
+                <p>Mini Games Web App</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/game-rps-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/game-rps-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
                 </div>
               </div>
-              <div class="tech">
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/library.png" />
-                <div class="content">
-                  <h1>Library</h1>
-                  <p>Mini Database Web App</p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/library-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/library-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
+            <div class="tech">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/tac-tac-toe.png" />
+              <div class="content">
+                <h1>Tic-Tac-Toe</h1>
+                <p>Mini Games Web App</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/game-tictactoe-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/game-tictactoe-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
                 </div>
               </div>
-              <div class="tech">
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/rps.png" />
-                <div class="content">
-                  <h1>Rock Paper Scissors</h1>
-                  <p>Mini Games Web App</p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/game-rps-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/game-rps-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
+            <div class="tech">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="card">
+            <div class="img-container">
+              <img src="./assets/projects/todolist.png" />
+              <div class="content">
+                <h1>To-Do-List</h1>
+                <p>What To Do Today?</p>
+                <div class="link">
+                  <a
+                    target="_blank"
+                    href="https://github.com/agahafiz04/todolist-odinproject"
+                    >Github <i class="fa-brands fa-github fa-1x"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://agahafiz04.github.io/todolist-odinproject/"
+                    >Demo <i class="fa-brands fa-github-alt fa-1x"></i
+                  ></a>
                 </div>
               </div>
-              <div class="tech">
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/tac-tac-toe.png" />
-                <div class="content">
-                  <h1>Tic-Tac-Toe</h1>
-                  <p>Mini Games Web App</p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/game-tictactoe-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/game-tictactoe-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="tech">
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
+            <div class="tech">
+              <img class="icon" src="./assets/icon/webpack.svg" alt="" />
+              <i class="fa-solid fa-font-awesome fa-3x"></i>
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
             </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="card">
-              <div class="img-container">
-                <img src="./assets/projects/todolist.png" />
-                <div class="content">
-                  <h1>To-Do-List</h1>
-                  <p>What To Do Today?</p>
-                  <div class="link">
-                    <a
-                      target="_blank"
-                      href="https://github.com/agahafiz04/todolist-odinproject"
-                      >Github <i class="fa-brands fa-github fa-1x"></i
-                    ></a>
-                    <a
-                      target="_blank"
-                      href="https://agahafiz04.github.io/todolist-odinproject/"
-                      >Demo <i class="fa-brands fa-github-alt fa-1x"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="tech">
-                <img class="icon" src="./assets/icon/webpack.svg" alt="" />
-                <i class="fa-solid fa-font-awesome fa-3x"></i>
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-              </div>
-            </div>
-          </swiper-slide>
-        </swiper-container>
-      </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
       <div class="line"></div>
     </section>
     <section class="content four">
@@ -389,6 +384,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <p class="footer-title">
         Copyright agahafiz04 <i class="fa-brands fa-github fa-xl"></i>

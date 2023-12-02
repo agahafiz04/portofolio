@@ -1,6 +1,7 @@
 @import "import.css";
 @import "reset.css";
 @import "slider.css";
+@import "media-query.css";
 
 /* Root */
 :root {
@@ -9,6 +10,10 @@
   --color-three: #de273e;
   --color-four: #130417;
   --color-five: #ffffff;
+}
+
+* {
+  outline: 1px solid green;
 }
 
 /* Body */
@@ -21,15 +26,16 @@ body {
   color: white;
 
   display: grid;
+  grid-template-columns: minmax(1500px, 1fr);
   grid-template-rows: 100px calc(100vh - 100px) 1fr auto auto 50px;
 }
 
 section.content h1.content-title {
-  font-size: 4rem;
+  font-size: 2.3rem;
 }
 
 section.content h1.container-title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   border: 5px solid var(--color-three);
   padding: 10px;
@@ -60,7 +66,7 @@ header .social-section a {
 /* Content One*/
 section.content.one {
   display: grid;
-  grid-template-columns: minmax(800px, 70%) minmax(350px, 30%);
+  grid-template-columns: 1fr;
   align-items: center;
 
   padding-bottom: 100px;
@@ -73,22 +79,27 @@ section.content.one {
 section.content.one .left-container {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 
   position: relative;
   z-index: 15;
 }
 
 section.content.one .left-container h1 {
-  font-size: 5.3rem;
+  font-size: 3.2rem;
+}
+
+section.content.one .left-container h1:nth-child(2) {
+  line-height: 0.1rem;
 }
 
 section.content.one .left-container p {
-  width: 90%;
-  font-size: 2.2rem;
+  width: 70%;
+  margin: 40px 0px 30px 0px;
+  font-size: 1.4rem;
 }
 
-section.content.one .left-container span {
+section.content.one .left-container span.span-two {
   text-decoration: underline;
   text-decoration-color: var(--color-three);
   text-underline-offset: 15px;
@@ -103,7 +114,7 @@ section.content.one .left-container a {
   text-underline-offset: 12px;
   text-decoration-thickness: 3px;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 section.content.one .left-container a:hover {
@@ -113,19 +124,16 @@ section.content.one .left-container a:hover {
 /* Right Container */
 
 section.content.one .right-container {
-  position: relative;
-  align-self: start;
+  position: absolute;
+  right: 250px;
+  top: -100px;
+
+  transition: 0.5s;
 }
 
 section.content.one .right-container .img-container {
-  width: calc(100% + 60px);
+  width: 400px;
   height: 70vh;
-
-  position: absolute;
-  bottom: calc(100px + -70vh);
-  left: -60px;
-
-  z-index: 1;
 }
 
 section.content.one .right-container img {
@@ -141,15 +149,15 @@ section.content.two {
   padding-bottom: 50px;
 }
 
-section.content.two > * {
-  margin-bottom: 40px;
+section.content.two .content-title {
+  margin-bottom: 2.5rem;
 }
 
 /* Top Container */
 section.content.two .top-container {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
   grid-auto-rows: 250px;
   align-items: center;
@@ -183,7 +191,7 @@ section.content.two .bottom-container h1 {
 section.content.two .bottom-container {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
   grid-auto-rows: 200px;
   align-items: center;
@@ -198,19 +206,14 @@ section.content.two .bottom-container .card h1 {
 /* Content Three */
 section.content.three {
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 225px;
+
+  min-height: 0;
+  min-width: 0;
 }
 
 section.content.three .container-title {
   margin-bottom: 5rem;
-}
-
-section.content.three .top-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr));
-  align-items: center;
-  column-gap: 4rem;
-  margin-bottom: 10rem;
 }
 
 section.content.three .content-title {
@@ -239,14 +242,14 @@ section.content.three .img-container {
 
 section.content.three .img-container img {
   border-radius: 5px;
-  object-position: top left;
-  height: 350px;
+  object-position: top center;
+  height: 400px;
   margin: 0 auto;
   opacity: 0.75;
 }
 
 section.content.three .img-container .content {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   width: 100%;
   height: 100%;
 
@@ -300,6 +303,8 @@ section.content.three .tech {
   align-items: center;
   justify-content: center;
   gap: 50px;
+
+  transition: 0.5s;
 }
 
 section.content.three .tech i {
@@ -312,15 +317,19 @@ section.content.three .tech img {
   width: 50px;
 }
 
-/* Bottom */
-section.content.three .bottom-container .card .img-container img {
-  width: 100%;
-  object-position: center;
-}
-
 /* Content Four */
 section.content.four {
-  margin-bottom: 100px;
+  position: relative;
+  bottom: 25px;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.content.four .main-container {
   position: relative;
 }
 
@@ -336,7 +345,7 @@ section.content.four .main-container {
 }
 
 section.content.four .left-container {
-  font-size: 2.25rem;
+  font-size: 1.3rem;
   /* 
   border: 1px solid white;
   padding: 25px; */
@@ -359,7 +368,8 @@ section.content.four .right-container button {
   color: white;
   font-family: inherit;
   font-weight: bold;
-  font-size: 1.5rem;
+
+  font-size: 1rem;
   border: 5px solid white;
   cursor: pointer;
   transition: 0.5s;
@@ -371,7 +381,7 @@ section.content.four .right-container button:hover {
 
 /* Footer */
 footer {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   background-color: var(--color-three);
 
   display: flex;
@@ -391,23 +401,7 @@ footer i {
   padding: 0px;
   background-color: var(--color-three);
   position: absolute;
-}
 
-.content.one .line {
-  left: 0;
-  right: 0;
-  bottom: 50px;
-  margin: 0 auto;
-}
-
-.content.two .line {
-  left: 0;
-  right: 0;
-  bottom: 50px;
-  margin: 0 auto;
-}
-
-.content.three .line {
   left: 0;
   right: 0;
   bottom: 50px;
@@ -420,39 +414,9 @@ section.content.one::after {
   background-image: url(../assets/abstract/abstract-5.svg),
     url(../assets/abstract/abstract-8.svg);
   background-repeat: no-repeat, no-repeat;
-  background-size: 25rem, 15rem;
+  background-size: 15rem, 10rem;
   opacity: 0.2;
-  background-position: top 100px left 100px, bottom 270px right 660px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 10;
-}
-
-section.content.two::after {
-  content: "";
-  background-image: url(../assets/abstract/abstract-4.svg);
-  background-repeat: no-repeat;
-  background-size: 60rem;
-  opacity: 0.1;
-  left: 35%;
-  right: 0;
-  top: 30%;
-  bottom: 0;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 10;
-}
-
-section.content.three::after {
-  content: "";
-  background-image: url(../assets/abstract/abstract-1.svg);
-  background-repeat: no-repeat;
-  background-size: 25rem;
-  opacity: 0.3;
-  background-position: top 100px right 240px;
+  background-position: top 100px left 150px, bottom 270px right 600px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -461,15 +425,41 @@ section.content.three::after {
   z-index: -1;
 }
 
-section.content.four .main-container {
-  position: relative;
+section.content.two::after {
+  content: "";
+  background-image: url(../assets/abstract/abstract-4.svg);
+  background-repeat: no-repeat;
+  background-size: 40rem;
+  opacity: 0.1;
+  left: 35%;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: -1;
+}
+
+section.content.three::after {
+  content: "";
+  background-image: url(../assets/abstract/abstract-1.svg);
+  background-repeat: no-repeat;
+  background-size: 15rem;
+  opacity: 0.3;
+  background-position: top 50px right 250px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 section.content.four .main-container::after {
   content: "";
   background-image: url(../assets/abstract/abstract-10.svg);
   background-repeat: no-repeat;
-  background-size: 40rem;
+  background-size: 25rem;
   opacity: 0.2;
   background-position: top 120px right -130px;
   top: 0;
@@ -477,5 +467,5 @@ section.content.four .main-container::after {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 10;
+  z-index: -1;
 }
