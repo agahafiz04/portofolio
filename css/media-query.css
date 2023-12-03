@@ -118,20 +118,6 @@
     bottom: -50px;
     margin: 0 auto;
   }
-  /*
-  body .content.two .line {
-    left: 0;
-    right: 0;
-    bottom: -50px;
-    margin: 0 auto;
-  }
-
-  body .content.three .line {
-    left: 0;
-    right: 0;
-    bottom: -100px;
-    margin: 0 auto;
-  } */
 
   html body section.content.two .top-container {
     grid-template-columns: repeat(2, 1fr);
@@ -144,6 +130,36 @@
     grid-auto-flow: row;
     grid-auto-rows: 150px;
   }
+
+  /* Background Abstract */
+  html body section.content.one::after {
+    background-image: url(../assets/abstract/abstract-5.svg);
+    background-size: 25rem !important;
+    background-position: center top !important;
+    opacity: 0.15;
+  }
+
+  section.content.two::after {
+    background-image: url(../assets/abstract/abstract-4.svg) !important;
+    background-size: 40rem !important;
+    right: 0 !important;
+    left: 15vw !important;
+    right: 0 !important;
+    top: 60vh !important;
+  }
+
+  section.content.three::after {
+    background-image: url(../assets/abstract/abstract-1.svg);
+    background-size: 15rem;
+    background-position: top 50px right 250px;
+  }
+
+  section.content.four .main-container::after {
+    background-image: url(../assets/abstract/abstract-10.svg);
+    background-size: 25rem;
+
+    background-position: top 120px right -130px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -155,14 +171,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  html body section.content.two .top-container {
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  }
-
-  html body section.content.two .bottom-container {
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  }
-
   body .line {
     width: 75%;
   }
