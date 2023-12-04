@@ -7,46 +7,22 @@
 @media only screen and (max-width: 1500px) {
   body > *:not(footer) {
     padding: 0px 100px 0px 100px !important;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
   }
 
-  section.content h1.content-title {
-    margin-bottom: 5rem !important;
-  }
-
-  /* html {
-    font-size: clamp(1px, 20%, 10px) !important;
-  } */
   html {
-    font-size: clamp(13px, 2vw, 20px);
+    font-size: clamp(5px, 2vw, 20px);
   }
 
   html body {
-    display: flex !important;
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-rows: 100px calc(100vh - 100px) 1fr auto 0.25fr 50px;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
-
-    /* grid-template-columns: minmax(700px, 1fr);
-    grid-template-rows: 100px calc(100vh - 100px) 1fr auto 0fr 50px;
-    justify-content: center;
-    text-align: center; */
-  }
-
-  html body section.content:not(.content.three, .content.four) {
-    padding-bottom: 5rem !important;
-    margin-bottom: 0rem !important;
   }
 
   html body section.content.one {
-    margin-bottom: 10rem !important;
-    height: calc(100vh - 150px);
-  }
-
-  html body section.content.one .left-container {
     display: flex !important;
-    justify-content: center;
+    top: 50px;
   }
 
   html body section.content.one .left-container h1 {
@@ -61,8 +37,8 @@
     bottom: 10%;
   }
 
-  html body section.content.two {
-    margin-top: 0;
+  html body section.content.three {
+    padding-bottom: 100px !important;
   }
 
   html body section.content.three .img-container img {
@@ -70,15 +46,11 @@
   }
 
   html body section.content.three .tech i {
-    font-size: 40px;
+    font-size: clamp(15px, 5vw, 50px);
   }
 
   html body section.content.three .tech img {
-    width: 40px;
-  }
-
-  html body section.content.four {
-    margin-top: 100px;
+    width: clamp(15px, 5vw, 50px);
   }
 
   html body section.content.four .main-container {
@@ -92,8 +64,8 @@
 
   html body section.content.four .left-container,
   html body section.content.four .right-container {
-    padding: 0;
     display: block;
+    padding: 0;
   }
 
   html body section.content.four .left-container p {
@@ -103,20 +75,6 @@
 
   html body section.content.four .right-container button {
     width: 80%;
-  }
-
-  /* Line */
-  body .line {
-    height: 3px;
-    padding: 0px;
-    background-color: var(--color-three);
-  }
-
-  body .content.one .line {
-    left: 0;
-    right: 0;
-    bottom: -50px;
-    margin: 0 auto;
   }
 
   html body section.content.two .top-container {
@@ -141,7 +99,7 @@
 
   section.content.two::after {
     background-image: url(../assets/abstract/abstract-4.svg) !important;
-    background-size: 40rem !important;
+    background-size: 35rem !important;
     right: 0 !important;
     left: 15vw !important;
     right: 0 !important;
@@ -149,9 +107,10 @@
   }
 
   section.content.three::after {
-    background-image: url(../assets/abstract/abstract-1.svg);
+    background: none !important;
+    /* background-image: url(../assets/abstract/abstract-1.svg) !important;
     background-size: 15rem;
-    background-position: top 50px right 250px;
+    background-position: top 50px right 250px; */
   }
 
   section.content.four .main-container::after {
@@ -166,7 +125,7 @@
   /* Top Container */
 
   html body section.content.three .img-container .content {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -186,7 +145,7 @@
   }
 
   html body section.content.three .img-container img {
-    height: 300px;
+    height: 200px;
   }
 }
 
@@ -194,5 +153,13 @@
   html body section.content.one .left-container span.span-two {
     display: inline-block;
     margin-top: 60px;
+  }
+
+  html body section.content.three .img-container img {
+    height: 100px;
+  }
+
+  html body section.content.four .main-container {
+    padding: 10px 5px 10px 5px;
   }
 }
