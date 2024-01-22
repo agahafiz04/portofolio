@@ -29,7 +29,7 @@ i:active {
 }
 
 img.icon {
-  width: 7em;
+  width: 5em;
   height: auto;
   filter: invert(28%) sepia(74%) saturate(6323%) hue-rotate(337deg)
     brightness(85%) contrast(104%);
