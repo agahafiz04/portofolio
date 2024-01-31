@@ -11,6 +11,7 @@ swiper-container::part(bullet) {
 swiper-container::part(button-prev),
 swiper-container::part(button-next) {
   color: var(--color-three);
+  top: 35%;
 }
 
 swiper-slide {
