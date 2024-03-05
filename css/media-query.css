@@ -1,10 +1,4 @@
-@media only screen and (max-width: 1600px) {
-  body section.content.one .right-container {
-    opacity: 0;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px), print {
   body > *:not(footer) {
     padding: 0px 100px 0px 100px !important;
   }
@@ -15,13 +9,13 @@
 
   html body {
     grid-template-columns: minmax(100px, 1fr);
-    grid-template-rows: 100px 1fr 2.5fr 0.5fr 0.75fr 100px;
+    grid-template-rows: 100px 1fr 2.5fr 0.5fr 0.75fr 50px;
     justify-content: center;
     text-align: center;
   }
 
   html body section.content.one .left-container p {
-    width: 100% !important;
+    max-width: unset !important;
   }
 
   html body section.content.one .left-container h1:nth-child(1) {
@@ -58,6 +52,10 @@
   html body section.content.four .left-container p {
     margin-top: 25px;
     margin-bottom: 30px;
+  }
+
+  body section.content.one .right-container {
+    opacity: 0;
   }
 
   html body section.content.four .right-container button {
@@ -110,20 +108,17 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  /* Top Container */
-
   html body section.content.three .img-container .content {
     font-size: 1rem;
   }
-}
 
-@media only screen and (max-width: 1000px) {
-  body .line {
-    width: 75%;
+  /* Top Container */
+  section.content.two .top-container {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px), print {
   body > *:not(footer) {
     padding: 0px 25px 0px 25px !important;
   }
@@ -133,45 +128,31 @@
   }
 
   html body section.content.three .tech {
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 0px;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  html body section.content.three .img-container img {
-    height: 100px;
-  }
-
-  html body section.content.four .main-container {
-    padding: 25px 5px 25px 5px;
-  }
-
   html body section.content.three .img-container .content {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   html body section.content.three .img-container .content .link a {
     padding: 3px 5px 3px 5px;
   }
-
-  html body section.content.three .tech i {
-    font-size: clamp(15px, 5%, 50px);
-  }
-
-  html body section.content.three .tech img {
-    width: clamp(15px, 5%, 50px);
-  }
 }
 
-/* @media only screen and (max-width: 280px) {
-  html {
-    font-size: clamp(8px, 1vw, 15px);
+@media print {
+  html body {
+    grid-template-rows: 100px 1fr 2.5fr 0.8fr 50px;
   }
-} */
 
-/* @media only screen and (max-height: 550px) {
-  body {
-    grid-template-rows: 50px 0.5fr 1fr auto 0.25fr !important;
+  section.content.two .bottom-container .card {
+    border: 2px solid var(--color-three);
   }
-} */
+
+  html body section.content.three {
+    display: none !important;
+  }
+}

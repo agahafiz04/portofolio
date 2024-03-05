@@ -1,7 +1,7 @@
 const scriptOne = document.createElement("script");
 scriptOne.src = "https://kit.fontawesome.com/a836538f8f.js";
 scriptOne.crossOrigin = "anonymous";
-scriptOne.defer = true;
+scriptOne.async = true;
 
 const scriptTwo = document.createElement("script");
 scriptTwo.src =

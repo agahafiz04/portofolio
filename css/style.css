@@ -97,7 +97,7 @@ section.content.one .left-container h1:nth-child(2) {
 }
 
 section.content.one .left-container p {
-  width: 70%;
+  max-width: 950px;
   margin: 40px 0px 30px 0px;
   font-size: 1.4rem;
 }
@@ -159,7 +159,7 @@ section.content.two {
 section.content.two .top-container {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
   grid-auto-rows: 250px;
   align-items: center;
@@ -302,9 +302,8 @@ section.content.three .img-container .content a:hover {
 section.content.three .tech {
   margin-top: 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 80px;
 
   transition: 0.5s;
 }
@@ -379,7 +378,6 @@ section.content.four .right-container button:hover {
 
 /* Footer */
 footer {
-  width: 100%;
   bottom: 0;
   padding: 15px;
 
